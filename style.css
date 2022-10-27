@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+    list-style: none;
+    text-decoration: none;
+    --swiper-theme-color: rgb(14, 51, 85);
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color:rgb(83, 146, 97);
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.inner_header{
+    width: 80vw;
+    height: 100%;
+    display: flex;   
+    margin: 0 auto;
+     
+}
+.logo_container{   
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo_container img{
+    height: 60px;
+    margin: 4px;
+
+}
+.logo_container:hover{
+    cursor: pointer;
+}
+
+.navigation_menu{
+  margin-right: 40px;
+  color: white;
+}
+
+.navigation_menu a{
+    font-size: 18px;
+    padding-right:20px;   
+}
+.navigation_menu a:last-child{
+    padding-right: 0px;
+}
+
+.navigation_menu a:hover {
+    text-decoration: underline;
+    text-decoration-line: solid;
+    cursor: pointer;
+}
+
+
+main{
+    min-height: 100vh;
+    padding-top:80px;
+    margin-bottom: -300px;
+}
+
+section{
+    border-style: solid none;
+    border-width: 4px;
+    border-color: rgb(176, 213, 184);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.welcome{
+    background-image: url("/photogallery/welcomeBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: larger;
+    border-style: none none solid;
+    justify-content:center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.welcome_info{
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+#logoWelcome{
+    width: 30%;
+    height: auto;
+    margin-left: 10vw;
+}
+.aboutUs{
+    background-image: url("/photogallery/overviewBackground.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    flex-direction: column;  
+}
+.aboutUs h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color:rgb(14, 51, 85);
+}
+.aboutUs img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.infoAboutUs{
+    width: 850px;
+    height: auto;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.851);
+    color: rgb(14, 51, 85);;
+    font-size:19px;
+    padding: 20px;
+    text-align: center;
+}
+.theHomestay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/photogallery/theHomestayBckgrnd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.containerTheHomestay{
+    display: flex;
+    width: 90vw;
+    max-height: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.theHomestay h1{
+    color:rgba(251, 255, 226) ;
+    font-size: 35px;
+}
+.containerTheHomestay .infoTheHomestay{
+    width: 49%;
+    height: fit-content;
+    max-height: 100%;
+    border-radius: 25px;
+    background-color: rgba(251, 255, 226, 0.896);
+    color: rgb(8, 26, 44);;
+    font-size:20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.containerTheHomestay .swiper-container-2{
+    width: 70%;
+    height: 90%;
+    margin-left: 40px;
+    
+}
+.containerTheHomestay .swiper-container-2 .swiper-slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.containerTheHomestay .swiper-container-2 .swiper-slide img{
+    max-width: 90%;
+    max-height: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+}
+
+.activities{
+    background-image: url("/photogallery/moto_ride.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    color:rgba(251, 255, 226) ;
+    font-size: 25px;
+}
+
+.photos{
+    background-color: rgb(176, 213, 184);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container-1{
+    width: 80%;
+    height: 100%;
+}
+.swiper-container-1 .swiper-slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.swiper-container-1 .swiper-slide img{
+    max-width: 90%;
+    max-height: 100%;
+}
+
+footer, .push{
+    height: 300px;
+    width: 100%;
+}
+
+footer{
+    color: white;
+    display: block;
+    background-color:rgb(83, 146, 97);
+}
+.inner_footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+.contact_info{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contact_info li{
+    margin-top: 10px;
+}
+.contactMail:hover{
+    color: rgb(14, 51, 85);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact_socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 10px 0;
+}
+.contact_socialmedia li{
+    margin: 0 15px;
+}
+.contact_socialmedia li a:hover{
+    color: rgb(14, 51, 85);
+    text-decoration: underline;
+    cursor: pointer;    
+}
+.contact_socialmedia li a{
+    text-decoration: none;
+    color: white;
+}
+.contact_socialmedia li a i{
+    font-size: 25px;
+}

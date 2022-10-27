@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.6.1.js"></script>
+    <title>Tho Homestay</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"  />   
+</head>
+<body>
+    <header>
+            <div class="logo_container" id="logo_container">
+                <img src="/img/thologo.png" alt="Logo" id="logo" onclick="scrollFunction('Welcome')">  
+            </div>
+            
+            <nav class="navigation_menu">
+                <a onclick="scrollFunction('Welcome')">Welcome</a>
+                <a onclick="scrollFunction('AboutUs')">About us</a>
+                <a onclick="scrollFunction('theHomestay')">The Homestay</a>
+                <a onclick="scrollFunction('Activities')">Activities</a>
+                <a onclick="scrollFunction('Photos')">Photos</a>
+                <a onclick="scrollFunction('ContactUs')">Contact us</a>
+            </nav>
+    </header>
+
+    <main>
+        <section class="welcome" id="Welcome">
+                <img src="/img/thologo.png" alt="Logo" id="logoWelcome">  
+                <div class="welcome_info">
+                    <h1>Welcome to Tho's homestay</h1>
+                    <h4>Come experience the lifestyle of Vietnam's Tay minority</h4>
+                </div>    
+        </section>
+        <section class="aboutUs" id="AboutUs">
+            <h1>About us</h1>
+            <img class="pictureAboutUs" src="/img/ThoAndCong.jpg">
+            <div class="infoAboutUs">We are Thô and Cong, a vietnamese couple who lives in a small village in northern Vietnam. We love to share our daily life with people from all over the world, that's why we've created a place when we can show our lifestyle and enjoy each others company. We don't want Tay culture to get lost, so we hope it can be preserved if more people come and experience it by themselves.</div>
+        </section>
+        <section class="theHomestay" id="theHomestay">
+            <h1>The Homestay</h1>
+            <div class="containerTheHomestay">
+                 <div class="infoTheHomestay">We are located in Na Rang Village, surrounded by mountains and nature.  In here you can find the traditional Tay home where we share our space to sleep with individual privacy. Also we have two shared bathrooms and a hot water shower you can use when you want.
+                    There is a big common area with fresh tea, hammocks and a garden to enjoy. We will cook and share breakfast, lunch and dinner provided by our own garden or local ingredients.
+                    Furthermore, we have some livestock, fruit trees and lots of walks around the area where you can get lost.</div>
+                    <!-- Slider main container -->
+                    <div class="swiper-container-2 swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->                    
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+            </div>
+            
+        </section>
+        <section class="activities" id="Activities"> 
+            <h1>Activities</h1>
+        </section>
+        <section class="photos" id="Photos">
+            <!-- Slider main container -->
+                <div class="swiper-container-1 swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->                    
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+        </section>
+        <div class="push"></div>
+    </main>
+    
+    <footer id="ContactUs">
+        <div class="inner_footer">
+            <div class="contact_info">Contact us at:
+                <ul>
+                    <li><i class="fa fa-phone" style="margin-right: 15px;"></i>(+84) 862217995 </li>
+                    <li class="contactMail"><i class="fa fa-envelope" style="margin-right: 15px;"></i>thohomestay@gmail.com</li>
+                </ul>
+               <br> Social media:
+            </div>
+            <ul class="contact_socialmedia">
+                <li><a href="https://www.facebook.com/thohomestay/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/thohomestay/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.google.com/search?q=tho%20homestay&rlz=1C1CHBF_esES933ES933&oq=tho+home&aqs=chrome.0.69i59j69i57j0i10i512l2j46i10i199i465i512j69i60j69i61l2.1173j0j4&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=12699715601292478625&lqi=Cgx0aG8gaG9tZXN0YXlaDiIMdGhvIGhvbWVzdGF5kgEScHJpdmF0ZV9ndWVzdF9yb29t&ved=2ahUKEwi1oKC8lfb6AhVllFYBHdBJDy0QvS56BAgQEAE&sa=X&rlst=f#rlfi=hd:;si:12699715601292478625,l,Cgx0aG8gaG9tZXN0YXlaDiIMdGhvIGhvbWVzdGF5kgEScHJpdmF0ZV9ndWVzdF9yb29t;mv:[[22.8702486,105.7063672],[22.3223545,104.4606719]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2" target="_blank"><i class="fa fa-google"></i></a></li>
+            </ul>
+        </div>   
+    </footer>
+
+<script src="main.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>//Code for the swipping of the pictures
+    var swiper1 = new Swiper('.swiper-container-1', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination1',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+    });
+
+    var swiper2 = new Swiper('.swiper-container-2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination2',
+    },
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.6.1.js"></script>
+    <title>Tho Homestay</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <script src="main.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="inner_header">
+            <div class="logo_container" id="logo_container">
+                <img src="/img/thologo.png" alt="Logo" id="logo" onclick="scrollFunction('Welcome')">  
+            </div>
+            
+            <ul class="navigation_menu">
+                <a onclick="scrollFunction('Welcome')"><li>Welcome</li></a>
+                <a onclick="scrollFunction('Overview')"><li>Overview</li></a>
+                <a onclick="scrollFunction('Activities')"><li>Activities</li></a>
+                <a onclick="scrollFunction('Photos')"><li>Photos</li></a>
+            </ul>
+        </div> 
+    </header>
+
+    <main>
+        <section class="overview" id="Welcome">
+            <img src="/img/thologo.png" alt="Logo" id="logoWelcome">  
+            <div class="welcome_info">
+                <h1>Welcome to Tho's homestay</h1>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, neque.</h4>
+            </div>
+        </section>
+        <section class="overview" id="Overview">
+            <h1>Overview</h1>
+        </section>
+        <section class="activities" id="Activities"> 
+            <h1>Activities</h1>
+        </section>
+        <section class="photos" id="Photos">
+            <div class="photoGallery">
+                <div class="imagesRow"></div>
+                <div class="imageContainer">
+                    <img id="expandedImg" style="width:100%">
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                  </div>
+            </div>
+        </section>
+        <div class="push"></div>
+    </main>
+    
+    <footer>
+        <div class="inner_footer">
+            <div class="contact_info">Plase contact us at: 00000000 or email@email.com</div>
+            <ul class="contact_socialmedia">
+                <li><a href="https://www.facebook.com/thohomestay/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/thohomestay/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.google.com/search?q=tho%20homestay&rlz=1C1CHBF_esES933ES933&oq=tho+home&aqs=chrome.0.69i59j69i57j0i10i512l2j46i10i199i465i512j69i60j69i61l2.1173j0j4&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=12699715601292478625&lqi=Cgx0aG8gaG9tZXN0YXlaDiIMdGhvIGhvbWVzdGF5kgEScHJpdmF0ZV9ndWVzdF9yb29t&ved=2ahUKEwi1oKC8lfb6AhVllFYBHdBJDy0QvS56BAgQEAE&sa=X&rlst=f#rlfi=hd:;si:12699715601292478625,l,Cgx0aG8gaG9tZXN0YXlaDiIMdGhvIGhvbWVzdGF5kgEScHJpdmF0ZV9ndWVzdF9yb29t;mv:[[22.8702486,105.7063672],[22.3223545,104.4606719]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2"><i class="fa fa-google"></i></a></li>
+            </ul>
+        </div>   
+    </footer>
+</body>
+</html>
