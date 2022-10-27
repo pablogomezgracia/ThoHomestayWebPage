@@ -77,6 +77,33 @@ section{
     align-items: center; 
 }
 
+/*Arrows for toggling the sections */
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: solid rgba(251, 255, 226) ;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    background-color: rgba(251, 255, 226, 0);
+    margin-top: 8%;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up {
+    width: 30px;
+    height: 30px;
+    border: solid rgba(251, 255, 226) ;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+
 .welcome{
     background-image: url("/photogallery/welcomeBackground.jpg");
     background-repeat: no-repeat;
@@ -139,10 +166,15 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     background-image: url("/photogallery/theHomestayBckgrnd.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+}
+#extendtheHomestay{
+    background-color: rgb(176, 213, 184);
+    background-image: none;
 }
 .containerTheHomestay{
     display: flex;
@@ -162,7 +194,7 @@ section{
     border-radius: 25px;
     background-color: rgba(251, 255, 226, 0.896);
     color: rgb(8, 26, 44);;
-    font-size:20px;
+    font-size:110%;
     padding: 15px;
     text-align: center;
 }
@@ -196,6 +228,9 @@ section{
     background-size:cover; 
     color:rgba(251, 255, 226) ;
     font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .photos{

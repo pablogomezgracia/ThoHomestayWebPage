@@ -14,7 +14,18 @@ function scrollFunction(section){
         inline: 'start'
       });
 }
-
+//For toggling the section
+function toggleSections(section , sectionID) {
+    var x = document.getElementById(section);
+    var arrow = document.getElementById(sectionID.concat('Arrow'))
+    arrow.classList.toggle("up")
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+      scrollFunction(section);
+    } else {
+      x.style.display = "none";      
+    }
+  }
 // For loading all the photos from the folder 'photogallery' intro the HTML
 var folder = "/photogallery/";
 
