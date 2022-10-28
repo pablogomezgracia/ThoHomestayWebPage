@@ -134,7 +134,7 @@ section{
     margin-left: 10vw;
 }
 .aboutUs{
-    background-image: url("/img/imgs/overviewBackground.jpeg");
+    background-image: url("/img/imgs/aboutusBckgrnd.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -227,7 +227,7 @@ section{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url("/img/imgs/theHomestayBckgrnd.jpg");
+    background-image: url("/img/thevillageBckgrnd.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -306,12 +306,16 @@ section{
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    
     width: 90vw;
     height: 90%;
   }
-  
-  .activityCard {
+.activitiesCards::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}  
+
+.activityCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,29 +325,33 @@ section{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     scroll-snap-align: start;
     transition: all 0.2s;
-  }
-  
-  .activityCard:not(:last-child) {
+}
+
+.activityCard:not(:last-child) {
     margin-right: 10px;
-  }
-  
-  .activityCard:hover {
+}
+
+.activityCard:hover {
     color: var(--white);
     background: var(--red);
-  }
-  .activityCard img{
-   max-width: 80%;
-   margin: 5px 0;
-  }
-  .activityCard .activityTitle {
+}
+.activityCard img{
+    max-width: 80%;
+    height: 170px;
+    margin: 5px 0;
+}
+.activityCard .activityTitle {
     font-size: 25px;
-  }
-  
-  .caactivityCardrd .activityInfo{
+    color: rgb(14, 51, 85);
+}
+
+.caactivityCardrd .activityInfo{
     font-size: 15px;
     margin: 20px 0;
     max-width: 85%;
-  }
+    
+}
+
 
 .photos{
     background-color: rgb(176, 213, 184);
@@ -355,18 +363,21 @@ section{
 
 .swiper-container-1{
     width: 80%;
-    height: 100%;
+    height: 85%;
 }
 .swiper-container-1 .swiper-slide{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .swiper-container-1 .swiper-slide img{
     max-width: 90%;
     max-height: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
 }
 
 footer, .push{
@@ -406,23 +417,23 @@ footer{
     cursor: pointer;
 }
 .contact_socialmedia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0 10px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 15px 0 10px 0;
 }
 .contact_socialmedia li{
-    margin: 0 15px;
+margin: 0 15px;
 }
 .contact_socialmedia li a:hover{
-    color: rgb(14, 51, 85);
-    text-decoration: underline;
-    cursor: pointer;    
+color: rgb(14, 51, 85);
+text-decoration: underline;
+cursor: pointer;    
 }
 .contact_socialmedia li a{
-    text-decoration: none;
-    color: white;
+text-decoration: none;
+color: white;
 }
 .contact_socialmedia li a i{
-    font-size: 25px;
+font-size: 25px;
 }

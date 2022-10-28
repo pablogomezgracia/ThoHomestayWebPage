@@ -14,7 +14,8 @@ function scrollFunction(section){
         inline: 'start'
       });
 }
-//For toggling the section
+
+//For toggling the sections
 function toggleSections(section , sectionID) {
     var x = document.getElementById(section);
     var arrow = document.getElementById(sectionID.concat('Arrow'))
@@ -26,8 +27,14 @@ function toggleSections(section , sectionID) {
       x.style.display = "none";      
     }
   }
-// For loading all the photos from the folder 'photogallery' intro the HTML automatically
-var folder = "/img/imgs/";
+// For loading all the photos from the folder 'img' intro the HTML automatically
+//By now its not automatically introduced by this JQuery lines because the server gave 404 error while reaching the photos. In local server works properyl,
+//so the problem appears when its deployed.
+//my guess is that the JQuery petition comes from the nodemodules folder, and the path is not reaching the img folder properly
+//another swiper should be created for The Village section in order to insert them automatically
+
+//For the Photos section
+var folder = "/img/";
 
 $.ajax({
     url : folder,  
@@ -39,6 +46,8 @@ $.ajax({
         });
     }
 });
+
+//For the Homestay section
 /*
 var folder = "/img/homestay/";
 $.ajax({
