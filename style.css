@@ -345,10 +345,11 @@ section{
     color: rgb(14, 51, 85);
 }
 
-.caactivityCardrd .activityInfo{
-    font-size: 15px;
+.activityCard .activityInfo{
+    font-size: 18px;
     margin: 20px 0;
     max-width: 85%;
+    color: rgb(14, 51, 85);
     
 }
 
