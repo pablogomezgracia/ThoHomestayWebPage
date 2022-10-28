@@ -27,7 +27,7 @@ function toggleSections(section , sectionID) {
     }
   }
 // For loading all the photos from the folder 'photogallery' intro the HTML
-var folder = "../photogallery/";
+var folder = "../img/imgs/";
 
 $.ajax({
     url : folder,  
@@ -39,7 +39,7 @@ $.ajax({
         });
     }
 });
-var folder = "../photogallery/homestay";
+var folder = "../img/homestay";
 $.ajax({
     url : folder,  
     success: function (data) {
