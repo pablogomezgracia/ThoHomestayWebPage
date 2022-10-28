@@ -15,6 +15,10 @@ function scrollFunction(section){
       });
 }
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 //For toggling the sections
 function toggleSections(section , sectionID) {
     var x = document.getElementById(section);
@@ -34,6 +38,7 @@ function toggleSections(section , sectionID) {
 //another swiper should be created for The Village section in order to insert them automatically
 
 //For the Photos section
+/*
 var folder = "/img/";
 
 $.ajax({
@@ -46,7 +51,7 @@ $.ajax({
         });
     }
 });
-
+*/
 //For the Homestay section
 /*
 var folder = "/img/homestay/";
