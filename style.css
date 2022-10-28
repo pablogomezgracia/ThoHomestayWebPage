@@ -221,6 +221,67 @@ section{
     border-width: 3px;
 }
 
+.theVillage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/img/imgs/theHomestayBckgrnd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#extendTheVillage{
+    background-color: rgb(176, 213, 184);
+    background-image: none;
+}
+.containerTheVillage{
+    display: flex;
+    width: 90vw;
+    max-height: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.theVillage h1{
+    color:rgba(251, 255, 226) ;
+    font-size: 35px;
+}
+.containerTheVillage .infoTheVillage{
+    width: 49%;
+    height: fit-content;
+    max-height: 100%;
+    border-radius: 25px;
+    background-color: rgba(251, 255, 226, 0.896);
+    color: rgb(8, 26, 44);;
+    font-size:110%;
+    padding: 15px;
+    text-align: center;
+}
+
+.containerTheVillage .swiper-container-2{
+    width: 70%;
+    height: 90%;
+    margin-left: 40px;
+    
+}
+.containerTheVillage .swiper-container-2 .swiper-slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.containerTheVillage .swiper-container-2 .swiper-slide img{
+    max-width: 90%;
+    max-height: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+}
+
+
 .activities{
     background-image: url("/img/imgs/moto_ride.jpg");
     background-repeat: no-repeat;
@@ -231,7 +292,58 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+   
 }
+#extendedActivities{
+    background-color: rgb(176, 213, 184);
+    background-image: none;  
+}
+
+.activitiesCards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+    width: 90vw;
+    height: 90%;
+  }
+  
+  .activityCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 30%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .activityCard:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .activityCard:hover {
+    color: var(--white);
+    background: var(--red);
+  }
+  .activityCard img{
+   max-width: 80%;
+   margin: 5px 0;
+  }
+  .activityCard .activityTitle {
+    font-size: 25px;
+  }
+  
+  .caactivityCardrd .activityInfo{
+    font-size: 15px;
+    margin: 20px 0;
+    max-width: 85%;
+  }
 
 .photos{
     background-color: rgb(176, 213, 184);

@@ -4,6 +4,7 @@
     <script src="jquery-3.6.1.js"></script>
     <title>Tho Homestay</title>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <link rel="stylesheet" href="style.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"  />   
@@ -32,11 +33,15 @@
                     <h4>Come experience the lifestyle of Vietnam's Tay minority</h4>
                 </div>    
         </section>
+
+
         <section class="aboutUs" id="AboutUs">
             <h1>About us</h1>
             <img class="pictureAboutUs" src="/img/ThoAndCong.jpg">
             <div class="infoAboutUs">We are Thô and Cong, a vietnamese couple who lives in a small village in northern Vietnam. We love to share our daily life with people from all over the world, that's why we've created a place when we can show our lifestyle and enjoy each others company. We don't want Tay culture to get lost, so we hope it can be preserved if more people come and experience it by themselves.</div>
         </section>
+
+
         <section class="theHomestay" id="theHomestay">
             <h1>The Homestay</h1>
             <i onclick="toggleSections('extendtheHomestay', 'homestay')" class="arrow down" id="homestayArrow"></i>
@@ -50,7 +55,16 @@
                     <div class="swiper-container-2 swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                        <!-- Slides -->                    
+                        <!-- Slides --> 
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_1.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_2.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_3.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_4.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_5.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_6.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_8.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_9.jpg'></div>   
+
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination swiper-pagination2"></div>
@@ -61,13 +75,127 @@
                     </div>
             </div>
         </section>
+
+
+        <section class="theVillage" id="theVillage">
+            <h1>The Village</h1>
+            <i onclick="toggleSections('extendTheVillage', 'village')" class="arrow down" id="villageArrow"></i>
+        </section>
+        <section class="theVillage" id="extendTheVillage" style="display: none;">
+            <div class="containerTheVillage">
+                 <div class="infoTheVillage">We are located in Na Rang Village, surrounded by mountains and nature.  In here you can find the traditional Tay home where we share our space to sleep with individual privacy. Also we have two shared bathrooms and a hot water shower you can use when you want.
+                    There is a big common area with fresh tea, hammocks and a garden to enjoy. We will cook and share breakfast, lunch and dinner provided by our own garden or local ingredients.
+                    Furthermore, we have some livestock, fruit trees and lots of walks around the area where you can get lost.</div>
+                    <!-- Slider main container -->
+                    <div class="swiper-container-2 swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides --> 
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_1.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_2.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_3.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_4.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_5.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_6.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_8.jpg'></div>   
+                        <div class='swiper-slide'><img class='galleryPhotos' src='/img/images/homphoto_9.jpg'></div>   
+                                           
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+            </div>
+        </section>
+
+
         <section class="activities" id="Activities"> 
             <h1>Activities</h1>
             <i onclick="toggleSections('extendedActivities' , 'activities')"class="arrow down" id="activitiesArrow"></i>
         </section>
         <section class="activities" id="extendedActivities" style="display: none;"> 
-            <h1>Activities</h1>
+            <ul class="activitiesCards">
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="img/imgs/moto_ride.jpg" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activityCard">
+                    <div>
+                        <h3 class="activityTitle">Moto tour</h3>
+                        <img src="" alt="" class="activityPhoto">
+                        <div class="activityInfo">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+  
+
         </section>
+
+
         <section class="photos" id="Photos">
             <!-- Slider main container -->
                 <div class="swiper-container-1 swiper">
