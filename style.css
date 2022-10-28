@@ -258,6 +258,13 @@ section{
     padding: 15px;
     text-align: center;
 }
+.containerTheVillage .infoTheVillage a{
+    color: rgb(47, 147, 241);
+}
+.containerTheVillage .infoTheVillage a:hover{
+    text-decoration: underline;
+    color: rgb(14, 51, 85);
+}
 
 .containerTheVillage .swiper-container-2{
     width: 70%;
